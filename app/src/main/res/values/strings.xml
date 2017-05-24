@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Shortcut Pinning Sample</string>
+    <string name="label">Test shortcut</string>
+</resources>
