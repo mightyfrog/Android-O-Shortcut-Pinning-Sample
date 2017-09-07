@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     @TargetApi(26)
     private void pinShortcut() {
         ShortcutManager manager = getSystemService(ShortcutManager.class);
-        if (manager.isRequestPinShortcutSupported()) {
+        if (manager != null && manager.isRequestPinShortcutSupported()) {
             Intent intent = new Intent(Intent.ACTION_VIEW); // action required
             ShortcutInfo info = new ShortcutInfo.Builder(this, createId())
                     .setIcon(Icon.createWithResource(this, R.drawable.ic_beach_access))
